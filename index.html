@@ -45,7 +45,6 @@
         }
         .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
             line-height: 100%;
-        
         }
         a[x-apple-data-detectors="true"] {
             color: inherit !important;
@@ -58,6 +57,7 @@
         u + .body a {
             color: inherit;
             text-decoration: none;
+            text-decoration-color: #405959 !important;
             font-size: inherit !important;
             font-family: inherit !important;
             line-height: inherit !important;
@@ -73,8 +73,8 @@
             
         }
         @media screen and (max-width: 399.98px) {
-            .button.td {
-                width: 350px !important;
+            .td.button {
+                width: 100% !important;
             }
             .slogan {
                 display: block !important;
@@ -89,11 +89,9 @@
             .footer-break {
                 display: block !important;
             }
-
             .footer-pipe {
                 display: none !important;
             }
-
             .footer-link {
                 line-height: 24px !important;
             }
@@ -105,7 +103,21 @@
         }
 
         @media (prefers-color-scheme: dark) {
-        
+            [data-ogsc] .background {
+                background-color: #ffe2bf !important;
+            }
+            [data-ogsb] .background {
+                background-color: #ffe2bf !important;
+            }
+            .background {
+                background-color: #ffe2bf !important;
+            }
+            [data-ogsc] .button {
+                color: #ffffff !important;
+            }
+            .dark-background {
+                display: block !important;
+            }
         }
 
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
@@ -114,13 +126,14 @@
 
     <!--[if mso]>   
         <style type="text/css">
-            body, table, td, p, a {font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif}
+            body, table, td, p, a, span {font-family: Arial, Helvetica, sans-serif !important;}
             table {border-spacing: 0 !important; border-collapse: collapse; !important;}
+            a {color: #ffffff; margin: 0 !important}
         </style>
     <![endif]-->
 
 </head>
-<body class="body" xml:lang="en" style="margin: 0; padding: 0; min-width: 100%; background-color: #efefef;">
+<body class="body" xml:lang="en" style="margin: 0; padding: 0; min-width: 100%; background-color: #ffffff;">
 
     <div style="width: 100%; table-layout: fixed; background-color: #dde0e1; color: #3d3d3d; font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif; font-size: 16px; margin: 0 auto;">
         <div style="max-width: 600px; background-color: #ffe2bf; color: #3d3d3d; font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif; font-size: 16px; box-shadow: 0 0 10px rgba(0, 0, 0, .2); margin: 0 auto;">
@@ -134,22 +147,16 @@
             <table align="center" style="border-spacing: 0; border-collapse: collapse; color: #3d3d3d; font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif; font-size: 16px; margin: 0 auto; padding: 0; width: 100%; max-width: 600px;" role="presentation">
 
                 <tr>
-                    <td class="background image" background="https://mcusercontent.com/3044e921e40ddc4d865d29e95/images/809630ed-0820-2bb6-1caa-79e0717ff214.png" width="600" valign="top" style="background-position: center top; background-repeat: no-repeat;">
+                    <td class="background" background="https://mcusercontent.com/3044e921e40ddc4d865d29e95/images/809630ed-0820-2bb6-1caa-79e0717ff214.png" width="600" height="1200" valign="top" style="background-position:center top; background-repeat:no-repeat; background-color: #ffe2bf;">
 
-                        <!--[if mso]>
-                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px; height:1200px;">
-                            <v:fill type="frame" src="https://mcusercontent.com/3044e921e40ddc4d865d29e95/images/809630ed-0820-2bb6-1caa-79e0717ff214.png" />
-                            <v:textbox inset="0,0,0,0">
-                        <![endif]-->
-
-                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                        <table style="border-spacing: 0;" role="presentation">
                             <tr>
-                                <td style="padding: 20px 0 30px 30px; text-align: left;">
-                                    <img src="https://mcusercontent.com/3044e921e40ddc4d865d29e95/images/27dcf280-3bd7-f4d7-59cd-22a3f5f2d865.png" alt="Quiet Hands Wellness logo" width="150" height="44" style="max-width: 100%; border: 0;">
+                                <td style="padding: 20px 0 30px 30px;">
+                                    <img class="logo-light" src="https://mcusercontent.com/3044e921e40ddc4d865d29e95/images/27dcf280-3bd7-f4d7-59cd-22a3f5f2d865.png" alt="Quiet Hands Wellness logo" width="150" height="44" style="border:0;">
                                 </td>
                             </tr>
                         </table>
-
+                        
                         <table width="100%" style="border-spacing: 0;" role="presentation">
                             <tr>
                                 <td align="center" valign="top">
@@ -157,17 +164,29 @@
                                         
                                         <tr>
                                             <td align="center" style="padding: 0 20px;">
-                                                <img src="https://mcusercontent.com/3044e921e40ddc4d865d29e95/images/0e7548cf-64cb-9de6-8604-0e1435fd1d6e.png" alt="Masseuse rolling wooden pin over woman's back" width="560" height="400" style="border: 0;">
+                                                <img src="https://mcusercontent.com/3044e921e40ddc4d865d29e95/images/0e7548cf-64cb-9de6-8604-0e1435fd1d6e.png" alt="Masseuse rolling wooden pin over woman's back" width="100%" height="auto" style="min-width: 200px; max-width: 600px; border: 0;">
                                             </td>
                                         </tr>
 
                                         <tr>
                                             <td align="center" style="padding: 20px;">
                                                 
-                                                <table align="center" style="border-spacing: 0;" role="presentation">
+                                                <table width="100%" align="center" style="border-spacing: 0;" role="presentation">
                                                     <tr>
-                                                        <td class="button td" align="center" width="250" style="min-width: 200px; border-radius: 8px;  background-color:#346564;" bgcolor="#346564">
-                                                            <a href="https://example.com" target="_blank" style="font-size: 20px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; text-decoration: none; color: #ffffff; background-color: #346564; border-radius: 8px; padding: 12px 24px; display: inline-block;">Get 20% Off</a>
+                                                        <!--[if !mso]><!-- -->
+                                                        <td class="td button" align="center" bgcolor="#405959" style="border-radius: 8px; background-color: #405959;">
+                                                        <!--<![endif]-->
+                                                        
+                                                            <!--[if mso]>
+                                                                <td align="center" width="600">
+                                                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://example.com" style="height:42px; width:600px; v-text-anchor:middle;" arcsize="14%" strokecolor="#405959" fillcolor="#405959">
+                                                                <w:anchorlock/>
+                                                                <center style="color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:20px; font-weight:600;">Get 20% Off</center>
+                                                                </v:roundrect>
+                                                                </td>
+                                                            <![endif]-->
+
+                                                            <a class="button" href="https://example.com" target="_blank" width="100%" style="max-width: 600px; font-size: 20px; font-weight: bold; text-decoration: none; color: #ffffff; background-color: #405959; border-radius: 8px; padding: 12px 24px; display: inline-block; mso-hide:all;">Get 20% Off</a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -175,9 +194,9 @@
                                             </td>
                                         </tr>
 
-                                        </tr>
-                                            <td style="padding: 20px 20px 60px; margin: 0; line-height: 24px; color: #346564;">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, molestias? Dicta, tenetur omnis distinctio nobis nesciunt velit porro, hic dolor quis debitis asperiores. Beatae reprehenderit obcaecati alias perferendis qui veniam?
+                                        <tr>
+                                            <td style="padding: 20px 20px 60px; margin: 0; line-height: 24px; color: #405959; font-family:'Noto Sans JP', Arial, Helvetica, sans-serif;">
+                                                <p style="color: #405959;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, molestias? Dicta, tenetur omnis distinctio nobis nesciunt velit porro, hic dolor quis debitis asperiores. Beatae reprehenderit obcaecati alias perferendis qui veniam?
                                                 </p>
                                             </td>
                                         </tr>
@@ -189,14 +208,14 @@
 
                         <table align="center" width="90%" style="border-spacing: 0;" role="presentation">
                             <tr>
-                                <td style="padding: 1px; background-color: #346564; font-size: 1px; line-height: 1px; height: 1px;"></td>
+                                <td style="padding: 1px; background-color: #405959; font-size: 1px; line-height: 1px; height: 1px;"></td>
                             </tr>
                         </table>
 
                         <table align="center" style="border-spacing: 0;" role="presentation">
                             <tr>
                                 <td style="text-align: center; padding: 20px 0;">
-                                    <img src="https://mcusercontent.com/3044e921e40ddc4d865d29e95/images/27dcf280-3bd7-f4d7-59cd-22a3f5f2d865.png" alt="Quiet Hands Wellness logo" width="150" height="44" style="max-width: 100%; border: 0;">
+                                    <img class="logo-light" src="https://mcusercontent.com/3044e921e40ddc4d865d29e95/images/27dcf280-3bd7-f4d7-59cd-22a3f5f2d865.png" alt="Quiet Hands Wellness logo" width="150" height="44" style="border:0;">
                                 </td>
                             </tr>
                         </table>
@@ -207,10 +226,10 @@
                                     <table width="100%" style="border-spacing: 0;" role="presentation">
                                         <tr>
                                             <td style="padding-right: 32px;">
-                                                <a href="https://example.com" target="_blank"><img src="https://mcusercontent.com/3044e921e40ddc4d865d29e95/images/741c81f7-687d-40ee-0e1a-3b7cee9dc0a3.png" alt="Facebook icon"></a>
+                                                <a class="fb-icon" href="https://example.com" target="_blank"><img src="https://mcusercontent.com/3044e921e40ddc4d865d29e95/images/f0394ebd-f40b-2129-36b9-e1e2d5aec2dc.png" width="32" height="auto" alt="Facebook icon" style="border: 0;"></a>
                                             </td>
                                             <td>
-                                                <a href="https://example.com" target="_blank"><img src="https://mcusercontent.com/3044e921e40ddc4d865d29e95/images/96e87714-941b-954c-5aa6-deb7fce371b7.png" alt="Instagram icon"></a>
+                                                <a class="ig-icon" href="https://example.com" target="_blank"><img src="https://mcusercontent.com/3044e921e40ddc4d865d29e95/images/08b155d5-c1ff-6ce8-2417-6cb5698925ec.png" width="32" height="auto" alt="Instagram icon" style="border: 0;"></a>
                                             </td>
                                         </tr>
                                     </table>
@@ -218,28 +237,24 @@
                             </tr>
                         </table>
 
-                        <table align="center" width="100%" style="border-spacing: 0;" role="presentation">
+                        <table align="center" style="border-spacing: 0;" role="presentation">
                             <tr>
                                 <td style="text-align: center; padding: 20px 16px 12px;">
-                                    <p style="margin: 0; font-size: 18px; font-weight: bold; color: #346564;"><span class="slogan">Calm Your Body.</span>&nbsp;<span class="slogan">Clear Your Mind.</span></p>
+                                    <p style="margin: 0; font-size: 18px; font-weight: bold; color: #405959;"><span class="slogan">Calm Your Body.</span>&nbsp;<span class="slogan">Clear Your Mind.</span></p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="text-align: center; padding: 12px 0;">
-                                    <p style="margin: 0; font-size: 14px; font-weight: bold; color: #587979;">© 2026 Quiet Hands Wellness<span class="copyright-pipe">&nbsp;|&nbsp;</span><span class="copyright-text">All rights reserved.</span></p>
+                                <td style="text-align: center; padding: 12px 0;">&nbsp;
+                                    <p style="margin: 0; font-size: 14px; font-weight: bold; color: #405959;">© 2026 Quiet Hands Wellness<span class="copyright-pipe">&nbsp;|&nbsp;</span><span class="copyright-text">All rights reserved.</span></p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="text-align: center; padding: 12px 0;">
-                                    <p style="margin: 0; font-size: 14px; font-weight: bold; color: #346564; padding-bottom: 20px;"><span class="footer-link"><a href="#" style="color:#346564; text-decoration: underline;">Unsubscribe</a></span><span>&nbsp;|&nbsp;</span><span class="footer-link"><a href="#" style="color:#346564; text-decoration: underline;">Manage Preferences</a></span><span class="footer-pipe">&nbsp;|&nbsp;</span><span class="footer-link footer-break"><a href="#" style="color:#346564; text-decoration: underline;">View in Browser</a></span></p>
+                                <td style="text-align: center; padding: 14px 0;">
+                                    <p style="margin: 0; font-size: 14px; font-weight: bold; color: #405959; padding-bottom: 20px;"><span class="footer-link"><a href="#" style="color:#405959; text-decoration: underline; text-decoration-color:#405959;">Unsubscribe</a></span><span>&nbsp;|&nbsp;</span><span class="footer-link"><a href="#" style="color:#405959; text-decoration: underline; text-decoration-color:#405959;">Manage Preferences</a></span><span class="footer-pipe">&nbsp;|&nbsp;</span><span class="footer-link footer-break"><a href="#" style="color:#405959; text-decoration: underline; text-decoration-color:#405959;">View in Browser</a></span></p>
                                 </td>
                             </tr>
                         </table>
 
-                        <!--[if mso]>
-                            </v:textbox>
-                            </v:rect>
-                        <![endif]-->
                     </td>
                 </tr>
 
